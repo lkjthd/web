@@ -1,0 +1,18 @@
+a {
+    text-decoration: none;
+    color: rgb(187, 0, 194);
+}
+
+a:hover, a:active {
+    color: rgb(247, 0, 255);
+}
+
+.navigation-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+mat-sidenav {
+    width: 500px;
+}

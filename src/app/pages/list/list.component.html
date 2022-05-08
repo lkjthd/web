@@ -1,0 +1,13 @@
+<h1>Most recent insurance:</h1>
+
+<td>First name: {{mrIns?.firstName}}</td>
+<td>Last name: {{mrIns?.lastName}}</td>
+<td>Car type: {{mrIns?.carType}}</td>
+<td>{{mrIns?.dateSubmitted | unixpipe}}</td>
+
+<h1>Least recent insurance:</h1>
+
+<td>First name: {{lrIns?.firstName}}</td>
+<td>Last name: {{lrIns?.lastName}}</td>
+<td>Car type: {{lrIns?.carType}}</td>
+<td>{{lrIns?.dateSubmitted | unixpipe}}</td>

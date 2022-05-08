@@ -1,0 +1,15 @@
+
+<mat-nav-list>
+    <a mat-list-item routerLink="/login" *ngIf="!user">
+        <span>Login</span>
+    </a>
+    <a mat-list-item routerLink="/register" *ngIf="!user">
+        <span>Register</span>
+    </a>
+    <a mat-list-item routerLink="/insurance" *ngIf="user">
+        <span>Insurance</span>
+    </a>
+    <a mat-list-item routerLink="/list" *ngIf="user">
+        <span>List</span>
+    </a>
+</mat-nav-list>

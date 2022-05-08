@@ -1,0 +1,23 @@
+<div class="main_component">
+    <div class="div-flex">
+        <form [formGroup]="insuranceForm" (ngSubmit)="submit()">
+            <mat-form-field>
+                <mat-label for="firstName">First Name</mat-label>
+                <input matInput type="text" formControlName="firstName" />
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label for="lastName">Last Name</mat-label>
+                <input matInput type="text" formControlName="lastName" />
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label for="carType">Car Type</mat-label>
+                <input matInput type="text" formControlName="carType" />
+            </mat-form-field>
+            <div>
+                <span class="buttons">
+                    <button mat-raised-button color="primary" type="submit">Apply</button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>

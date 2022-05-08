@@ -1,0 +1,18 @@
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav>
+    <app-menu (selectedPage)="changePage($event)" [currentPage]="page" *ngIf="page" [user]="user"></app-menu>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
+        <ul fxLayout fxLayoutGap="8px" class="navigation-items">
+          <li *ngIf="!(user)"><a routerLink="/login">Login</a></li>
+          <li *ngIf="!(user)"><a routerLink="/register">Register</a></li>
+          <li *ngIf="(user)"><a routerLink="/insurance">Insurance</a></li>
+          <li *ngIf="(user)"><a routerLink="/list">List</a></li>
+        </ul>
+      </div>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
